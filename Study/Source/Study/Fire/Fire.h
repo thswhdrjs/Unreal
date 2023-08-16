@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:50e51d16d76ca48729a408c4869928a53a6dcd0ec433440c486b10c44e723cc1
-size 809
+// Fill out your copyright notice in the Description page of Project Settings.
+
+#pragma once
+
+#include "CoreMinimal.h"
+#include "GameFramework/Actor.h"
+#include <Engine/Classes/Particles/ParticleSystemComponent.h>
+#include "Fire.generated.h"
+
+UCLASS()
+class TEST_API AFire : public AActor
+{
+	GENERATED_BODY()
+	
+public:	
+	// Sets default values for this actor's properties
+	AFire();
+
+protected:
+	// Called when the game starts or when spawned
+	virtual void BeginPlay() override;
+
+public:	
+	// Called every frame
+	virtual void Tick(float DeltaTime) override;
+
+	UPROPERTY(EditAnywhere)
+	UParticleSystemComponent* FireParticle;
+
+	UPROPERTY(EditAnywhere)
+	int8 FireTime;
+
+	FTimerHandle FireTimerHandle;
+
+	void Combustion();
+
+	UFUNCTION(BlueprintCallable)
+	void OffFire();
+};

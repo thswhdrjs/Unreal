@@ -1,3 +1,51 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fa3e643333938f5fa70cebabf968cfa512eeccbde52c28d4b86cffdd52db8e30
-size 4895
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-Test-6150.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\Unreal\Unreal Projects\Test\Intermediate\Build\Win64\TestEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"D:\Unreal\Unreal Projects\Test\Intermediate\Build\Win64\UE4Editor\Development\Test\AttachSceneComponent.cpp.obj"
+"D:\Unreal\Unreal Projects\Test\Intermediate\Build\Win64\UE4Editor\Development\Test\CameraDirector.cpp.obj"
+"D:\Unreal\Unreal Projects\Test\Intermediate\Build\Win64\UE4Editor\Development\Test\CollidingPawn.cpp.obj"
+"D:\Unreal\Unreal Projects\Test\Intermediate\Build\Win64\UE4Editor\Development\Test\CollidingPawnMovementComponent.cpp.obj"
+"D:\Unreal\Unreal Projects\Test\Intermediate\Build\Win64\UE4Editor\Development\Test\Countdown.cpp.obj"
+"D:\Unreal\Unreal Projects\Test\Intermediate\Build\Win64\UE4Editor\Development\Test\CustomStructs.cpp.obj"
+"D:\Unreal\Unreal Projects\Test\Intermediate\Build\Win64\UE4Editor\Development\Test\Door.cpp.obj"
+"D:\Unreal\Unreal Projects\Test\Intermediate\Build\Win64\UE4Editor\Development\Test\Fire.cpp.obj"
+"D:\Unreal\Unreal Projects\Test\Intermediate\Build\Win64\UE4Editor\Development\Test\FloatingActor.cpp.obj"
+"D:\Unreal\Unreal Projects\Test\Intermediate\Build\Win64\UE4Editor\Development\Test\MovingActor.cpp.obj"
+"D:\Unreal\Unreal Projects\Test\Intermediate\Build\Win64\UE4Editor\Development\Test\MyActor.cpp.obj"
+"D:\Unreal\Unreal Projects\Test\Intermediate\Build\Win64\UE4Editor\Development\Test\MyActorComponent.cpp.obj"
+"D:\Unreal\Unreal Projects\Test\Intermediate\Build\Win64\UE4Editor\Development\Test\MyPawn.cpp.obj"
+"D:\Unreal\Unreal Projects\Test\Intermediate\Build\Win64\UE4Editor\Development\Test\RevolutionSceneComponent.cpp.obj"
+"D:\Unreal\Unreal Projects\Test\Intermediate\Build\Win64\UE4Editor\Development\Test\SpawnerSceneComponent.cpp.obj"
+"D:\Unreal\Unreal Projects\Test\Intermediate\Build\Win64\UE4Editor\Development\Test\Test.cpp.obj"
+"D:\Unreal\Unreal Projects\Test\Intermediate\Build\Win64\UE4Editor\Development\Test\TestActor.cpp.obj"
+"D:\Unreal\Unreal Projects\Test\Intermediate\Build\Win64\UE4Editor\Development\Test\TestGameModeBase.cpp.obj"
+"D:\Unreal\Unreal Projects\Test\Intermediate\Build\Win64\UE4Editor\Development\Test\UMGPlayerController.cpp.obj"
+"D:\Unreal\Unreal Projects\Test\Intermediate\Build\Win64\UE4Editor\Development\Test\ViewPortLogActor.cpp.obj"
+"D:\Unreal\Unreal Projects\Test\Intermediate\Build\Win64\UE4Editor\Development\Test\AttachSceneComponent.gen.cpp.obj"
+"D:\Unreal\Unreal Projects\Test\Intermediate\Build\Win64\UE4Editor\Development\Test\CameraDirector.gen.cpp.obj"
+"D:\Unreal\Unreal Projects\Test\Intermediate\Build\Win64\UE4Editor\Development\Test\CollidingPawn.gen.cpp.obj"
+"D:\Unreal\Unreal Projects\Test\Intermediate\Build\Win64\UE4Editor\Development\Test\CollidingPawnMovementComponent.gen.cpp.obj"
+"D:\Unreal\Unreal Projects\Test\Intermediate\Build\Win64\UE4Editor\Development\Test\Countdown.gen.cpp.obj"
+"D:\Unreal\Unreal Projects\Test\Intermediate\Build\Win64\UE4Editor\Development\Test\CustomStructs.gen.cpp.obj"
+"D:\Unreal\Unreal Projects\Test\Intermediate\Build\Win64\UE4Editor\Development\Test\Door.gen.cpp.obj"
+"D:\Unreal\Unreal Projects\Test\Intermediate\Build\Win64\UE4Editor\Development\Test\Fire.gen.cpp.obj"
+"D:\Unreal\Unreal Projects\Test\Intermediate\Build\Win64\UE4Editor\Development\Test\FloatingActor.gen.cpp.obj"
+"D:\Unreal\Unreal Projects\Test\Intermediate\Build\Win64\UE4Editor\Development\Test\MovingActor.gen.cpp.obj"
+"D:\Unreal\Unreal Projects\Test\Intermediate\Build\Win64\UE4Editor\Development\Test\MyActor.gen.cpp.obj"
+"D:\Unreal\Unreal Projects\Test\Intermediate\Build\Win64\UE4Editor\Development\Test\MyActorComponent.gen.cpp.obj"
+"D:\Unreal\Unreal Projects\Test\Intermediate\Build\Win64\UE4Editor\Development\Test\MyPawn.gen.cpp.obj"
+"D:\Unreal\Unreal Projects\Test\Intermediate\Build\Win64\UE4Editor\Development\Test\RevolutionSceneComponent.gen.cpp.obj"
+"D:\Unreal\Unreal Projects\Test\Intermediate\Build\Win64\UE4Editor\Development\Test\SpawnerSceneComponent.gen.cpp.obj"
+"D:\Unreal\Unreal Projects\Test\Intermediate\Build\Win64\UE4Editor\Development\Test\Test.init.gen.cpp.obj"
+"D:\Unreal\Unreal Projects\Test\Intermediate\Build\Win64\UE4Editor\Development\Test\TestActor.gen.cpp.obj"
+"D:\Unreal\Unreal Projects\Test\Intermediate\Build\Win64\UE4Editor\Development\Test\TestGameModeBase.gen.cpp.obj"
+"D:\Unreal\Unreal Projects\Test\Intermediate\Build\Win64\UE4Editor\Development\Test\UMGPlayerController.gen.cpp.obj"
+"D:\Unreal\Unreal Projects\Test\Intermediate\Build\Win64\UE4Editor\Development\Test\ViewPortLogActor.gen.cpp.obj"
+"D:\Unreal\Unreal Projects\Test\Intermediate\Build\Win64\UE4Editor\Development\Test\Default.rc2.res"
+/OUT:"D:\Unreal\Unreal Projects\Test\Intermediate\Build\Win64\UE4Editor\Development\Test\UE4Editor-Test-6150.lib"

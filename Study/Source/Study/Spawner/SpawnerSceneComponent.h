@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:29df76b5df7aed93b04b40e94b96899b2601c813ba5c04d8c2c390efbc049174
-size 778
+// Fill out your copyright notice in the Description page of Project Settings.
+
+#pragma once
+
+#include "CoreMinimal.h"
+#include "Components/SceneComponent.h"
+#include "SpawnerSceneComponent.generated.h"
+
+
+UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
+class TEST_API USpawnerSceneComponent : public USceneComponent
+{
+	GENERATED_BODY()
+
+public:	
+	// Sets default values for this component's properties
+	USpawnerSceneComponent();
+
+protected:
+	// Called when the game starts
+	virtual void BeginPlay() override;
+
+public:	
+	// Called every frame
+	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
+
+	float DestroyTimer;
+
+	TArray<UStaticMeshComponent*> Childs;
+};

@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8263b7d9c95567096548891f69114d471b7a076f5fbeec89fdb3f28592cc9904
-size 503
+// Fill out your copyright notice in the Description page of Project Settings.
+
+#pragma once
+
+#include "CoreMinimal.h"
+#include "GameFramework/PawnMovementComponent.h"
+#include "CollidingPawnMovementComponent.generated.h"
+
+/**
+ * 
+ */
+UCLASS()
+class TEST_API UCollidingPawnMovementComponent : public UPawnMovementComponent
+{
+	GENERATED_BODY()
+	
+public:
+	virtual void TickComponent(float DeltaTime, enum ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
+};

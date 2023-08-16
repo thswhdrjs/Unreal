@@ -1,3 +1,157 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:79244a64bb6b43282e7e52275b627a40b2517aadf3f629fe82e2c84e8c1d3b10
-size 5991
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\Test.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{A0E9073A-C770-4096-9253-6A38401F6842}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\Test.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\TestEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\.ignore" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{CA3F1B06-4E99-4722-8B97-648C87F60948}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\Test">
+      <UniqueIdentifier>{5ECEE0D7-69D9-4DFC-8753-948AA3BF5323}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Test\AttachSceneComponent.cpp">
+      <Filter>Source\Test</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Test\AttachSceneComponent.h">
+      <Filter>Source\Test</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Test\CameraDirector.cpp">
+      <Filter>Source\Test</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Test\CameraDirector.h">
+      <Filter>Source\Test</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Test\CollidingPawn.cpp">
+      <Filter>Source\Test</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Test\CollidingPawn.h">
+      <Filter>Source\Test</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Test\CollidingPawnMovementComponent.cpp">
+      <Filter>Source\Test</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Test\CollidingPawnMovementComponent.h">
+      <Filter>Source\Test</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Test\Countdown.cpp">
+      <Filter>Source\Test</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Test\Countdown.h">
+      <Filter>Source\Test</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Test\CustomStructs.cpp">
+      <Filter>Source\Test</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Test\CustomStructs.h">
+      <Filter>Source\Test</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Test\Door.cpp">
+      <Filter>Source\Test</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Test\Door.h">
+      <Filter>Source\Test</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Test\Fire.cpp">
+      <Filter>Source\Test</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Test\Fire.h">
+      <Filter>Source\Test</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Test\FloatingActor.cpp">
+      <Filter>Source\Test</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Test\FloatingActor.h">
+      <Filter>Source\Test</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Test\MovingActor.cpp">
+      <Filter>Source\Test</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Test\MovingActor.h">
+      <Filter>Source\Test</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Test\MyActor.cpp">
+      <Filter>Source\Test</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Test\MyActor.h">
+      <Filter>Source\Test</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Test\MyActorComponent.cpp">
+      <Filter>Source\Test</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Test\MyActorComponent.h">
+      <Filter>Source\Test</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Test\MyPawn.cpp">
+      <Filter>Source\Test</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Test\MyPawn.h">
+      <Filter>Source\Test</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Test\RevolutionSceneComponent.cpp">
+      <Filter>Source\Test</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Test\RevolutionSceneComponent.h">
+      <Filter>Source\Test</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Test\SpawnerSceneComponent.cpp">
+      <Filter>Source\Test</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Test\SpawnerSceneComponent.h">
+      <Filter>Source\Test</Filter>
+    </ClInclude>
+    <None Include="..\..\Source\Test\Test.Build.cs">
+      <Filter>Source\Test</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\Test\Test.cpp">
+      <Filter>Source\Test</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Test\Test.h">
+      <Filter>Source\Test</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Test\TestActor.cpp">
+      <Filter>Source\Test</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Test\TestActor.h">
+      <Filter>Source\Test</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Test\TestGameModeBase.cpp">
+      <Filter>Source\Test</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Test\TestGameModeBase.h">
+      <Filter>Source\Test</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Test\UMGPlayerController.cpp">
+      <Filter>Source\Test</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Test\UMGPlayerController.h">
+      <Filter>Source\Test</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Test\ViewPortLogActor.cpp">
+      <Filter>Source\Test</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Test\ViewPortLogActor.h">
+      <Filter>Source\Test</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

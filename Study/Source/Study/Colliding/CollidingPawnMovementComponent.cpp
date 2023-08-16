@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4b8a4ed00e115235d851c3fa05dd62ed8f8108bb0b152853953cd8b1621c5117
-size 835
+// Fill out your copyright notice in the Description page of Project Settings.
+
+
+#include "CollidingPawnMovementComponent.h"
+
+void UCollidingPawnMovementComponent::TickComponent(float DeltaTime, enum ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
+{
+	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
+
+	if (!PawnOwner || !UpdatedComponent || ShouldSkipUpdate(DeltaTime))
+		return;
+
+	FVector DesiredMovementThisFrame = ConsumeInputVector().GetClampedToMaxSize(1.0f) * DeltaTime * 150.0f;
+
+	if (!DesiredMovementThisFrame.IsNearlyZero())
+	{
+		FHitResult Hit;
+		SafeMoveUpdatedComponent(DesiredMovementThisFrame, UpdatedComponent->GetComponentRotation(), true, Hit);
+
+		if (Hit.IsValidBlockingHit())
+			SlideAlongSurface(DesiredMovementThisFrame, 1.0f - Hit.Time, Hit.Normal, Hit);
+	}
+}

@@ -1,3 +1,84 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8f3ced7f6c2f7ff0e2edbdc42ddcb6edb8bbaf2b5f5f4de820cd9af25086fe5d
-size 3302
+// Copyright Epic Games, Inc. All Rights Reserved.
+/*===========================================================================
+	Generated code exported from UnrealHeaderTool.
+	DO NOT modify this manually! Edit the corresponding .h files instead!
+===========================================================================*/
+
+#include "UObject/GeneratedCppIncludes.h"
+#include "Test/ViewPortLogActor.h"
+#ifdef _MSC_VER
+#pragma warning (push)
+#pragma warning (disable : 4883)
+#endif
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+void EmptyLinkFunctionForGeneratedCodeViewPortLogActor() {}
+// Cross Module References
+	TEST_API UClass* Z_Construct_UClass_AViewPortLogActor_NoRegister();
+	TEST_API UClass* Z_Construct_UClass_AViewPortLogActor();
+	ENGINE_API UClass* Z_Construct_UClass_AActor();
+	UPackage* Z_Construct_UPackage__Script_Test();
+// End Cross Module References
+	void AViewPortLogActor::StaticRegisterNativesAViewPortLogActor()
+	{
+	}
+	UClass* Z_Construct_UClass_AViewPortLogActor_NoRegister()
+	{
+		return AViewPortLogActor::StaticClass();
+	}
+	struct Z_Construct_UClass_AViewPortLogActor_Statics
+	{
+		static UObject* (*const DependentSingletons[])();
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
+#endif
+		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
+		static const UE4CodeGen_Private::FClassParams ClassParams;
+	};
+	UObject* (*const Z_Construct_UClass_AViewPortLogActor_Statics::DependentSingletons[])() = {
+		(UObject* (*)())Z_Construct_UClass_AActor,
+		(UObject* (*)())Z_Construct_UPackage__Script_Test,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AViewPortLogActor_Statics::Class_MetaDataParams[] = {
+		{ "IncludePath", "ViewPortLogActor.h" },
+		{ "ModuleRelativePath", "ViewPortLogActor.h" },
+	};
+#endif
+	const FCppClassTypeInfoStatic Z_Construct_UClass_AViewPortLogActor_Statics::StaticCppClassTypeInfo = {
+		TCppClassTypeTraits<AViewPortLogActor>::IsAbstract,
+	};
+	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_AViewPortLogActor_Statics::ClassParams = {
+		&AViewPortLogActor::StaticClass,
+		"Engine",
+		&StaticCppClassTypeInfo,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		UE_ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x009000A4u,
+		METADATA_PARAMS(Z_Construct_UClass_AViewPortLogActor_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_AViewPortLogActor_Statics::Class_MetaDataParams))
+	};
+	UClass* Z_Construct_UClass_AViewPortLogActor()
+	{
+		static UClass* OuterClass = nullptr;
+		if (!OuterClass)
+		{
+			UE4CodeGen_Private::ConstructUClass(OuterClass, Z_Construct_UClass_AViewPortLogActor_Statics::ClassParams);
+		}
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(AViewPortLogActor, 349591026);
+	template<> TEST_API UClass* StaticClass<AViewPortLogActor>()
+	{
+		return AViewPortLogActor::StaticClass();
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_AViewPortLogActor(Z_Construct_UClass_AViewPortLogActor, &AViewPortLogActor::StaticClass, TEXT("/Script/Test"), TEXT("AViewPortLogActor"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(AViewPortLogActor);
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+#ifdef _MSC_VER
+#pragma warning (pop)
+#endif

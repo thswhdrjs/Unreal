@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:032eb3222c9ea897704998376999070bdc1dbd887942522e3304c526c320a93d
-size 614
+// Fill out your copyright notice in the Description page of Project Settings.
+
+#pragma once
+
+#include "CoreMinimal.h"
+#include "GameFramework/Actor.h"
+#include "CustomStructs.h"
+#include "TestActor.generated.h"
+
+UCLASS()
+class TEST_API ATestActor : public AActor
+{
+	GENERATED_BODY()
+	
+public:	
+	// Sets default values for this actor's properties
+	ATestActor();
+
+protected:
+	// Called when the game starts or when spawned
+	virtual void BeginPlay() override;
+
+public:	
+	// Called every frame
+	virtual void Tick(float DeltaTime) override;
+
+	UPROPERTY(EditAnywhere)
+	FCustomStruct cs;
+};

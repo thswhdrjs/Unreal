@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1d352bf784d383bd8a39fc039c94124b902cf32b2592ad3cc8fc24dfe359541d
-size 151
+// Copyright Epic Games, Inc. All Rights Reserved.
+
+#pragma once
+
+#include "CoreMinimal.h"
+
+DECLARE_LOG_CATEGORY_EXTERN(MyLogCategory, Log, All);

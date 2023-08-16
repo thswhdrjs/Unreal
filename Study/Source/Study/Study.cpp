@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8079fcbcf06ec5d9a03df6968cb2a6854b4d6fe06028d9ae7df416e8bd25538c
-size 222
+// Copyright Epic Games, Inc. All Rights Reserved.
+
+#include "Study.h"
+#include "Modules/ModuleManager.h"
+
+IMPLEMENT_PRIMARY_GAME_MODULE( FDefaultGameModuleImpl, Test, "Study" );
+
+DEFINE_LOG_CATEGORY(MyLogCategory);

@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:22de11b0c04751bd752af70772c542344f920cede5df441d5cd2a5d3cfb36902
-size 612
+// Copyright Epic Games, Inc. All Rights Reserved.
+
+
+#include "TestGameModeBase.h"
+#include <Blueprint/UserWidget.h>
+
+void ATestGameModeBase::BeginPlay()
+{
+	Super::BeginPlay();
+	ChangeMenuWidget(StartingWidgetClass);
+}
+
+void ATestGameModeBase::ChangeMenuWidget(TSubclassOf<UUserWidget> NewWidgetClass)
+{
+	if (CurrentWidget != nullptr)
+	{
+		CurrentWidget->RemoveFromViewport();
+		CurrentWidget = nullptr;
+	}
+
+	if (NewWidgetClass != nullptr)
+	{
+		CurrentWidget = CreateWidget(GetWorld(), NewWidgetClass);
+
+		if (CurrentWidget != nullptr)
+		{
+			CurrentWidget->AddToViewport();
+		}
+	}
+}

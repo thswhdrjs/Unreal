@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3ef16f91bb0f5f3702a37ed4a2734f6a25b8fd5dbe84ea06b3c01e774cc5ee94
-size 527
+// Fill out your copyright notice in the Description page of Project Settings.
+
+#pragma once
+
+#include "CoreMinimal.h"
+#include "CustomStructs.generated.h"
+
+class TEST_API CustomStructs
+{
+public:
+	CustomStructs();
+	~CustomStructs();
+};
+
+USTRUCT(Atomic, BlueprintType)
+struct FCustomStruct
+{
+	GENERATED_USTRUCT_BODY()
+public:
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	AActor* actor;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	int32 i;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float f;
+};

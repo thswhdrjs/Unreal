@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:66d6838679628da27bc27a73d4838b8c4ea3fc3643f28ab253cd5e0e04275abb
-size 561
+// Fill out your copyright notice in the Description page of Project Settings.
+
+#pragma once
+
+#include "CoreMinimal.h"
+#include "GameFramework/Actor.h"
+#include "MovingActor.generated.h"
+
+UCLASS()
+class TEST_API AMovingActor : public AActor
+{
+	GENERATED_BODY()
+	
+public:	
+	// Sets default values for this actor's properties
+	AMovingActor();
+
+protected:
+	// Called when the game starts or when spawned
+	virtual void BeginPlay() override;
+
+public:	
+	// Called every frame
+	virtual void Tick(float DeltaTime) override;
+
+	float Timer;
+};

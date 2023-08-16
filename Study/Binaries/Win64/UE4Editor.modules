@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cf1ffade7c1b4e5881ca9542bb0b5a3894f97597264ebd209f337f96fed2d6af
-size 88
+{
+	"BuildId": "17155196",
+	"Modules": 
+	{
+		"Test": "UE4Editor-Test-4762.dll"
+	}
+}

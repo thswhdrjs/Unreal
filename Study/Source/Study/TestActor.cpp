@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2af1a6f84a147cee45b5e2306f219ebdac6dc0c14abfb9554872bd7cb673fef9
-size 537
+// Fill out your copyright notice in the Description page of Project Settings.
+
+
+#include "TestActor.h"
+
+// Sets default values
+ATestActor::ATestActor()
+{
+ 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	PrimaryActorTick.bCanEverTick = true;
+
+}
+
+// Called when the game starts or when spawned
+void ATestActor::BeginPlay()
+{
+	Super::BeginPlay();
+	
+}
+
+// Called every frame
+void ATestActor::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+
+}
+

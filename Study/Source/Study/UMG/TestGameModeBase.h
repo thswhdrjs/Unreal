@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b0edaf2a12294a430b7ae85935b3ac6157b2f97241bec60437fbcbf3a2e2986e
-size 636
+// Copyright Epic Games, Inc. All Rights Reserved.
+
+#pragma once
+
+#include "CoreMinimal.h"
+#include "GameFramework/GameModeBase.h"
+#include "TestGameModeBase.generated.h"
+
+/**
+ * 
+ */
+UCLASS()
+class TEST_API ATestGameModeBase : public AGameModeBase
+{
+	GENERATED_BODY()
+	
+public:
+	UFUNCTION(BlueprintCallable, Category = "UMG_Game")
+		void ChangeMenuWidget(TSubclassOf<UUserWidget> NewWidgetClass);
+
+protected:
+	virtual void BeginPlay() override;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "UMG_Game")
+	TSubclassOf<UUserWidget> StartingWidgetClass;
+
+	UPROPERTY()
+	UUserWidget* CurrentWidget;
+};

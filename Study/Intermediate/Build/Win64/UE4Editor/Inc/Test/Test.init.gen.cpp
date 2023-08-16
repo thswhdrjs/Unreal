@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dfbea0e5f86578f7d0c82b34791b8684be1fd93ef44c7e3f6016fbc69d1f4504
-size 1087
+// Copyright Epic Games, Inc. All Rights Reserved.
+/*===========================================================================
+	Generated code exported from UnrealHeaderTool.
+	DO NOT modify this manually! Edit the corresponding .h files instead!
+===========================================================================*/
+
+#include "UObject/GeneratedCppIncludes.h"
+#ifdef _MSC_VER
+#pragma warning (push)
+#pragma warning (disable : 4883)
+#endif
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+void EmptyLinkFunctionForGeneratedCodeTest_init() {}
+	UPackage* Z_Construct_UPackage__Script_Test()
+	{
+		static UPackage* ReturnPackage = nullptr;
+		if (!ReturnPackage)
+		{
+			static const UE4CodeGen_Private::FPackageParams PackageParams = {
+				"/Script/Test",
+				nullptr,
+				0,
+				PKG_CompiledIn | 0x00000000,
+				0xB60FEC8D,
+				0xA83C207C,
+				METADATA_PARAMS(nullptr, 0)
+			};
+			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);
+		}
+		return ReturnPackage;
+	}
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+#ifdef _MSC_VER
+#pragma warning (pop)
+#endif

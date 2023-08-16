@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1e3ce2068c25d9196a8d605f4b41ac0d71627173babe1c0dbedd31d8f2919d28
-size 379
+// Fill out your copyright notice in the Description page of Project Settings.
+
+#pragma once
+
+#include "CoreMinimal.h"
+#include "GameFramework/PlayerController.h"
+#include "UMGPlayerController.generated.h"
+
+/**
+ * 
+ */
+UCLASS()
+class TEST_API AUMGPlayerController : public APlayerController
+{
+	GENERATED_BODY()
+	
+public:
+	virtual void BeginPlay() override;
+};

@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:00e4d6fb5837c05223685b131c3b55cf051a2f3f9da9859d96b1a3c7482f81df
-size 282
+{
+	"Targets": [
+		{
+			"Name": "Test",
+			"Path": "D:\\Unreal\\Unreal Projects\\Test\\Source\\Test.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "TestEditor",
+			"Path": "D:\\Unreal\\Unreal Projects\\Test\\Source\\TestEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

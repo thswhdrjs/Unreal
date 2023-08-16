@@ -1,3 +1,46 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a0ed4bb5517262c6b2856b8ea65d33360aa1f769e371ed3a33074bb7488d1cc2
-size 948
+// Fill out your copyright notice in the Description page of Project Settings.
+
+
+#include "Fire.h"
+
+// Sets default values
+AFire::AFire()
+{
+ 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	PrimaryActorTick.bCanEverTick = true;
+
+	FireParticle = CreateDefaultSubobject<UParticleSystemComponent>(TEXT("Fire Particle"));
+	RootComponent = FireParticle;
+
+	FireTime = 5;
+}
+
+// Called when the game starts or when spawned
+void AFire::BeginPlay()
+{
+	Super::BeginPlay();
+	
+	GetWorldTimerManager().SetTimer(FireTimerHandle, this, &AFire::Combustion, 1.0f, true);
+}
+
+// Called every frame
+void AFire::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+
+}
+
+void AFire::Combustion()
+{
+	--FireTime;
+
+	if (FireTime <= 0)
+		OffFire();
+}
+
+void AFire::OffFire()
+{
+	GetWorldTimerManager().ClearTimer(FireTimerHandle);
+	FireParticle->DeactivateSystem();
+}
+

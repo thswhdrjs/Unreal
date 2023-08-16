@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:43ef5e922c3b0174a15de9c77b069a206c38ef8d069d3667392033a2870d6fc0
-size 648
+// Fill out your copyright notice in the Description page of Project Settings.
+
+#pragma once
+
+#include "CoreMinimal.h"
+#include "GameFramework/Actor.h"
+#include "FloatingActor.generated.h"
+
+UCLASS()
+class TEST_API AFloatingActor : public AActor
+{
+	GENERATED_BODY()
+	
+public:	
+	// Sets default values for this actor's properties
+	AFloatingActor();
+
+protected:
+	// Called when the game starts or when spawned
+	virtual void BeginPlay() override;
+
+public:	
+	// Called every frame
+	virtual void Tick(float DeltaTime) override;
+
+	FVector RunningTime;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FVector FloatingSpeed;
+};
